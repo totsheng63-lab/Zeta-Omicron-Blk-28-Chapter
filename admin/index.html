@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Alpha Kappa Rho - BLK 28 Chapter</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="dashboard-layout">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="../images/logo.png" alt="AKRho">
+            <h3>Admin Panel</h3>
+            <small style="color:var(--muted);">Admin User</small>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="../events.html"><i class="fas fa-calendar"></i> Events</a></li>
+            <li><a href="../officers.html"><i class="fas fa-users"></i> Members</a></li>
+            <li><a href="../announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+            <li><a href="../projects.html"><i class="fas fa-hands-helping"></i> Projects</a></li>
+            <li><a href="../gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="../documents.html"><i class="fas fa-file-alt"></i> Documents</a></li>
+            <li style="margin-top:2rem; border-top:1px solid var(--border); padding-top:1rem;">
+                <a href="../index.html"><i class="fas fa-arrow-left"></i> Back to Site</a>
+            </li>
+            <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <div class="dashboard-header">
+            <h2 style="color:var(--gold);">Admin Dashboard</h2>
+            <span style="color:var(--text-sec);"><i class="fas fa-user-shield"></i> Admin User</span>
+        </div>
+        <div class="dashboard-cards">
+            <div class="dashboard-card fade-in"><h4>Total Members</h4><div class="number">200+</div></div>
+            <div class="dashboard-card fade-in"><h4>Upcoming Events</h4><div class="number">5</div></div>
+            <div class="dashboard-card fade-in"><h4>Active Projects</h4><div class="number">3</div></div>
+            <div class="dashboard-card fade-in"><h4>Funds Raised</h4><div class="number">PHP 543K</div></div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)); gap:1.5rem;">
+            <div style="background:var(--card); border:1px solid var(--border); border-radius:12px; padding:2rem;">
+                <h3 style="color:var(--gold); margin-bottom:1.5rem;"><i class="fas fa-users"></i> Recent Members</h3>
+                <div class="table-container" style="border:none;">
+                    <table>
+                        <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th></tr></thead>
+                        <tbody>
+                            <tr><td>Juan Dela Cruz</td><td>member@akrho.com</td><td>Member</td><td><span class="badge badge-success">Active</span></td></tr>
+                            <tr><td>Maria Santos</td><td>maria@akrho.com</td><td>Member</td><td><span class="badge badge-success">Active</span></td></tr>
+                            <tr><td>Pedro Reyes</td><td>pedro@akrho.com</td><td>Member</td><td><span class="badge badge-success">Active</span></td></tr>
+                            <tr><td>Ana Garcia</td><td>ana@akrho.com</td><td>Member</td><td><span class="badge badge-warning">Neophyte</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div style="background:var(--card); border:1px solid var(--border); border-radius:12px; padding:2rem;">
+                <h3 style="color:var(--gold); margin-bottom:1.5rem;"><i class="fas fa-calendar-check"></i> Recent Registrations</h3>
+                <div class="table-container" style="border:none;">
+                    <table>
+                        <thead><tr><th>Name</th><th>Event</th><th>Date</th><th>Status</th></tr></thead>
+                        <tbody>
+                            <tr><td>Carlos Mendoza</td><td>General Assembly</td><td>Aug 25</td><td><span class="badge badge-success">Confirmed</span></td></tr>
+                            <tr><td>Sofia Lim</td><td>Community Outreach</td><td>Aug 30</td><td><span class="badge badge-success">Confirmed</span></td></tr>
+                            <tr><td>Miguel Torres</td><td>Founders Day</td><td>Sep 8</td><td><span class="badge badge-warning">Pending</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

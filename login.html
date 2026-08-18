@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login | Alpha Kappa Rho - BLK 28 Chapter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="AKRho Logo">
+                <span>AKRHO</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="officers.html" >Officers</a></li>
+                <li><a href="events.html" >Events</a></li>
+                <li><a href="projects.html" >Projects</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="login.html" class="nav-cta"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+<section class="auth-container">
+    <div class="auth-box fade-in">
+        <img src="images/logo.png" alt="AKRho Logo" class="logo">
+        <h2>Member Login</h2>
+        <p class="subtitle">Access your brotherhood portal</p>
+        <div class="alert alert-success" style="display:none;" id="login-msg">Demo mode: Click below to simulate login</div>
+        <form onsubmit="event.preventDefault(); alert('Demo: In a real setup, this would authenticate via backend. Use the buttons below to simulate.');">
+            <div class="form-group" style="text-align:left;">
+                <label>Email Address</label>
+                <input type="email" name="email" class="form-control" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group" style="text-align:left;">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fas fa-sign-in-alt"></i> Login</button>
+        </form>
+        <div class="auth-links">
+            <p style="margin-bottom:.5rem;"><a href="#">Forgot password?</a></p>
+            <div style="margin-top:1.5rem; padding:1rem; background:var(--bg); border-radius:8px; border:1px solid var(--border);">
+                <p style="font-size:.85rem; color:var(--muted); margin-bottom:.5rem;"><strong>Demo Login:</strong></p>
+                <a href="member-dashboard.html" class="btn btn-sm btn-outline" style="margin-right:.5rem;"><i class="fas fa-user"></i> Member View</a>
+                <a href="admin/index.html" class="btn btn-sm btn-primary"><i class="fas fa-user-shield"></i> Admin View</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="AKRho BLK 28 Logo">
+                <h3>Alpha Kappa Rho</h3>
+                <p>BLK 28 Chapter — Celebrating 53 years of brotherhood, leadership, and service. United we stand, divided we fall. Long Live Alpha Kappa Rho!</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="officers.html">Our Officers</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Member Area</h4>
+                <ul>
+                    <li><a href="login.html">Member Login</a></li>
+                    <li><a href="member-dashboard.html">Dashboard</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="announcements.html">Announcements</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect With Us</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span class="current-year"></span> Alpha Kappa Rho - BLK 28 Chapter. All rights reserved. | <a href="login.html" style="color:var(--muted)">Admin</a></p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

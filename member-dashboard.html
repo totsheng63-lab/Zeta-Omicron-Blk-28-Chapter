@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Dashboard | Alpha Kappa Rho - BLK 28 Chapter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="AKRho Logo">
+                <span>AKRHO</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="officers.html" >Officers</a></li>
+                <li><a href="events.html" >Events</a></li>
+                <li><a href="projects.html" >Projects</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="login.html" class="nav-cta"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+<div class="dashboard-layout">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="images/logo.png" alt="AKRho">
+            <h3>Juan Dela Cruz</h3>
+            <small style="color:var(--muted);">Member</small>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="member-dashboard.html" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="events.html"><i class="fas fa-calendar"></i> Events</a></li>
+            <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+            <li><a href="documents.html"><i class="fas fa-file-alt"></i> Documents</a></li>
+            <li><a href="projects.html"><i class="fas fa-hands-helping"></i> Projects</a></li>
+            <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Support</a></li>
+            <li style="margin-top:2rem; border-top:1px solid var(--border); padding-top:1rem;"><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <div class="dashboard-header">
+            <h2 style="color:var(--gold);">Member Dashboard</h2>
+            <div><span style="color:var(--text-sec);"><i class="fas fa-user-circle"></i> Juan Dela Cruz</span></div>
+        </div>
+        <div class="dashboard-cards">
+            <div class="dashboard-card fade-in"><h4>Events Attended</h4><div class="number">12</div></div>
+            <div class="dashboard-card fade-in"><h4>Service Hours</h4><div class="number">48</div></div>
+            <div class="dashboard-card fade-in"><h4>Projects Joined</h4><div class="number">5</div></div>
+            <div class="dashboard-card fade-in"><h4>Membership Status</h4><div class="number" style="font-size:1.2rem; color:var(--success);"><i class="fas fa-check-circle"></i> Active</div></div>
+        </div>
+        <div style="background:var(--card); border:1px solid var(--border); border-radius:12px; padding:2rem; margin-bottom:2rem;">
+            <h3 style="color:var(--gold); margin-bottom:1.5rem;"><i class="fas fa-calendar-check"></i> Upcoming Events</h3>
+            <div class="table-container" style="border:none;">
+                <table>
+                    <thead><tr><th>Event</th><th>Date</th><th>Location</th><th>Status</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>General Assembly</strong></td><td>August 25, 2026</td><td>AKRho Headquarters</td><td><span class="badge badge-success">Upcoming</span></td></tr>
+                        <tr><td><strong>Community Outreach</strong></td><td>August 30, 2026</td><td>Barangay San Jose</td><td><span class="badge badge-success">Upcoming</span></td></tr>
+                        <tr><td><strong>Founders Day</strong></td><td>September 8, 2026</td><td>Grand Ballroom</td><td><span class="badge badge-success">Upcoming</span></td></tr>
+                        <tr><td><strong>Fundraising Gala</strong></td><td>September 15, 2026</td><td>Convention Center</td><td><span class="badge badge-warning">Ongoing</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="background:var(--card); border:1px solid var(--border); border-radius:12px; padding:2rem;">
+            <h3 style="color:var(--gold); margin-bottom:1.5rem;"><i class="fas fa-bullhorn"></i> Recent Announcements</h3>
+            <div style="padding:1.5rem; background:var(--bg); border-radius:8px; margin-bottom:1rem; border:1px solid var(--border);">
+                <div style="display:flex; justify-content:space-between; margin-bottom:.5rem;">
+                    <strong style="color:var(--text);">New Member Orientation Schedule</strong>
+                    <small style="color:var(--muted);">August 10, 2026</small>
+                </div>
+                <p style="color:var(--text-sec); font-size:.9rem;">All neophytes are required to attend the orientation on August 20, 2026. Please bring your requirements.</p>
+            </div>
+            <div style="padding:1.5rem; background:var(--bg); border-radius:8px; margin-bottom:1rem; border:1px solid var(--border);">
+                <div style="display:flex; justify-content:space-between; margin-bottom:.5rem;">
+                    <strong style="color:var(--text);">Updated Dues Payment Policy</strong>
+                    <small style="color:var(--muted);">August 8, 2026</small>
+                </div>
+                <p style="color:var(--text-sec); font-size:.9rem;">Please be informed that membership dues should be settled before the end of each month to avoid penalties.</p>
+            </div>
+            <a href="announcements.html" class="btn btn-sm btn-outline">View All</a>
+        </div>
+    </main>
+</div>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="AKRho BLK 28 Logo">
+                <h3>Alpha Kappa Rho</h3>
+                <p>BLK 28 Chapter — Celebrating 53 years of brotherhood, leadership, and service. United we stand, divided we fall. Long Live Alpha Kappa Rho!</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="officers.html">Our Officers</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Member Area</h4>
+                <ul>
+                    <li><a href="login.html">Member Login</a></li>
+                    <li><a href="member-dashboard.html">Dashboard</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="announcements.html">Announcements</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect With Us</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span class="current-year"></span> Alpha Kappa Rho - BLK 28 Chapter. All rights reserved. | <a href="login.html" style="color:var(--muted)">Admin</a></p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
